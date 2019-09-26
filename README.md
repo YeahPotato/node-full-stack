@@ -1,11 +1,10 @@
-Node full stack practice
+# Node full stack practice
 
-##### commit message格式说明
+## commit message格式说明
 Commit message一般包括三部分：Header、Body和Footer。
 
-`Header`
+`Header`                                
     type(scope):subject
-
     type：用于说明commit的类别，规定为如下几种
     feat：新增功能；
     fix：修复bug；
@@ -20,10 +19,10 @@ Commit message一般包括三部分：Header、Body和Footer。
     revert：回滚到上一个版本；
     scope：【可选】用于说明commit的影响范围
     subject：commit的简要说明，尽量简短
-    
-`Body`
+
+`Body`      
     对本次commit的详细描述，可分多行
 
-`Footer`
-不兼容变动：需要描述相关信息
-关闭指定Issue：输入Issue信息
+`Footer`        
+    不兼容变动：需要描述相关信息
+    关闭指定Issue：输入Issue信息
