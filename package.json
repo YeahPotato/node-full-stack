@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog:new": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "change:append": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "gitHooks": {
+    "commit-msg": "node git-hooks/verify-commit-msg.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +19,14 @@
     "koa": "^2.8.1",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2",
+    "yorkie": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
