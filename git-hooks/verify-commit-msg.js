@@ -13,3 +13,4 @@ if (!commitRE.test(msg)) {
         chalk.red(`  You can also use ${chalk.cyan(`npm run commit`)} to interactively generate a commit message.\n`)
     )
     process.exit(1)
+}
